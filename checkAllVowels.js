@@ -6,13 +6,12 @@ function checkAllVowels(arr) {
 }
 
 function vowelChecker(str) {
-    var vowel='aiueo';
+    var vowel='aiueoAIUEO';
     for(var i=0; i<str.length; i++) {
         if(vowel.indexOf(str[i])===-1) return false;
     }
     return true;
 }
 
-
-var arr=['aqrst','ukaei','ffooo']
-checkAllVowels(arr);
+var arr=['aqrst','ukaei','ffooo','aiAAueo']
+checkAllVowels(arr)
