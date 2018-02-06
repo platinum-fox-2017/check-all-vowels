@@ -1,22 +1,25 @@
 function checkVowel(input) {
-  var aa=['a','i','u','e','o'];
+  var hurufVokal=['a','i','u','e','o'];
   var temp=0;
   var hit=0;
   for(var i=0;i<input.length;i++)
   {
-    for(var j=0;j<aa.length;j++)
+
+    for(var j=0;j<hurufVokal.length;j++)
     {
-      if(input[i]!==aa[j])
-      {
-        temp++;
-      }
+        if(hurufVokal.indexOf(input[i])===-1)
+          {
+            temp++;
+          }
     }
+
     if(temp<5)
     {
-      hit++;
+       hit++;
     }
 
   }
+
   if(hit>0)
   {
       return true;
