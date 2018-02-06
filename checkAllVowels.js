@@ -9,9 +9,8 @@ const vowels = (string) => {
     }
     return true
 }
-// const result = string.filter(word => word.length > 6);
 
 console.log(vowels('hello')) //false
 console.log('-------');
 console.log(vowels('aaaaaa')); //true
-console.log(vowels('aiueob'));
+console.log(vowels('aiueob')); //false
