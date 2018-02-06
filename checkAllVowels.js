@@ -28,8 +28,9 @@ function arrayGenerator(str){
         for(var j=0; j<strToArray[i].length; j++){
             temp.push(strToArray[i][j]);
         }
-        console.log(temp);
+        result.push(temp);
     }
+    return result;
 }
 
 console.log(arrayGenerator('aqrst,ukaei,ffooo'));
