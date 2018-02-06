@@ -1,7 +1,6 @@
 function checkVowels(str){
     var vowels = ['a', 'i', 'u', 'e', 'o'];
     var strToArr = str.toLowerCase().split('');
-    //console.log(strToArr);
     var isVowels = 0;
 
     for(var i=0; i<str.length; i++){
