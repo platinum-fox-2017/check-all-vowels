@@ -1,6 +1,6 @@
 //SELASA
 function cekString(str){
-  var bukanVokal = 'bcdfghjklmnpqrstvwxyz123456789'
+  var bukanVokal = 'bcdfghjklmnpqrstvwxyz123456789`~!@# $%^&*()_-+=\|[{}]";:/?.>,<'
   for(var i=0; i<str.length; i++){
     for(var j=0; j<bukanVokal.length; j++){
       if(str[i]===bukanVokal[j]){
