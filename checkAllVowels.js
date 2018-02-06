@@ -1,3 +1,5 @@
+
+//Release 0
 function checkVowels(str){
     var vowels = ['a', 'i', 'u', 'e', 'o'];
     var strToArr = str.toLowerCase().split('');
@@ -16,6 +18,21 @@ function checkVowels(str){
     }
     return true;
 }
+
+//Release 1
+function arrayGenerator(str){
+    var strToArray = str.split(',');
+    var result = [];
+    for(var i=0; i<strToArray.length; i++){
+        var temp = [];
+        for(var j=0; j<strToArray[i].length; j++){
+            temp.push(strToArray[i][j]);
+        }
+        console.log(temp);
+    }
+}
+
+console.log(arrayGenerator('aqrst,ukaei,ffooo'));
 
 console.log(checkVowels('eoaiu'));
 console.log(checkVowels('aaIibiuU'));
