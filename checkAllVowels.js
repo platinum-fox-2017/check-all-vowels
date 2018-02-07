@@ -1,12 +1,10 @@
 
 function checkVowels(str) {
-  let dict = 'aiueo'
+  let dict = 'aiueo '
 
   for (var i = 0; i < str.length; i++) {
-    // console.log(dict.indexOf(str[i]));
     if (dict.indexOf(str[i]) === -1) {
       return false
-      i = -1
     }
   }
   return true
