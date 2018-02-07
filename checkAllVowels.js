@@ -1,11 +1,9 @@
 const vowels = (string) => {
-    let dictionary_vowals = ['a', 'i', 'u', 'e', 'o']
+    let dictionary_vowels = ['a', 'i', 'u', 'e', 'o']
     for (let i = 0; i < string.length; i++) {
-        let dictionary_vowels
         if (-1 == dictionary_vowels.indexOf(string[i])) {
             return false
         }
-
     }
     return true
 }
