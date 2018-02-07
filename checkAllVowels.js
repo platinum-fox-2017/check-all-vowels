@@ -6,9 +6,9 @@ function checkAllVowels(arr) {
 }
 
 function vowelChecker(str) {
-    var vowel='aiueoAIUEO';
+    var vowel='aiueo';
     for(var i=0; i<str.length; i++) {
-        if(vowel.indexOf(str[i])===-1) return false;
+        if(vowel.indexOf(str[i].toLowerCase())===-1) return false;
     }
     return true;
 }
