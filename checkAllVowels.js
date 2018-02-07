@@ -1,21 +1,12 @@
 function checkVowels(str) {
   var vowel = ['a','i','u','e','o'];
-  var lowerCaseStr = str.toLowerCase();
-  var result = true
 
-  for(var i=0; i<lowerCaseStr.length; i++) {
-    var vowelTest = true
-    for(var j=0; j<vowel.length; j++) {
-      if(vowelTest) {
-        if(lowerCaseStr[i] == vowel[j]) {
-        }
-      }
-      if(j == vowel.length-1) {
-        result = false
-      }
+  for(let i=0; i<str.length; i++) {
+    if(vowel.includes(str[i].toLowerCase()) == false) {
+      return false
     }
   }
-  return result
+  return true
 }
 
 console.log(checkVowels('aiueo')); //true
